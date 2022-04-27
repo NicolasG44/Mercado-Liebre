@@ -19,16 +19,29 @@ header {
 .search {
     width: 80%;
     padding: 8px 8px;
-    border-radius: 5px;
+    border-radius: 5 0px 0px 5px;
     border: none;
+    margin: 0 -4px 0 0;
+    border-right: 1px solid rgb(187, 182, 182);
+}
+
+.lupa {
+    color: rgb(151, 148, 148);
+    background-color: white;
+    width: 10%;
+    height: 3.3vh;
+    border-radius: 0 5px 5px 0;
+    border: none;
+    align-self: center;
 }
 
 .slogan {
-    font-size: 15px;
+    font-size: 12px;
     font-weight: lighter;
     text-align: center;
     max-width: 80%;
     height: 8gvh;
+    margin-bottom: 10px;
 }
 
 body {
@@ -51,7 +64,10 @@ body {
 
 .banner {
     display: block;
-    width: 100%;
+    width: 100vw;
+    margin: 0px 0px -10px -8px;
+    border-bottom: 1px solid grey;
+    box-shadow: 0 0 10px 0;
 }
 
 main {
@@ -111,6 +127,11 @@ main {
     top: -15px;
 }
 
+.contenedor-camion:hover {
+    transform: rotate(-90deg);
+    transition: 450ms;
+}
+
 .contenedor-precio-descuento {
     display: flex;
     flex-wrap: wrap;
@@ -127,9 +148,10 @@ main {
 .descuentos {
     font-size: 16px;
     color: #39b54a;
-    line-height: 24px;
+    line-height: 23px;
     text-align: left;
     flex-grow: 0.7;
+    margin-left: 8px;
 }
 
 .descripcion {
@@ -137,22 +159,21 @@ main {
 
 }
 
-footer {
-    text-align: center;
-
-    line-height: 12px;
-    font-size: 12px;
+.main-footer {
+    display: flex;
+    justify-content: space-between;
 }
 
 .icono {
+    text-align: center;
     font-size: 23px;
     color: blue;
 }
 
 .textos-footer {
-    font-size: 12px;
     text-align: center;
-    line-height: 15px;
+    font-size: 12px;
+    line-height: 12px;
     padding: 20px;
     margin: 0 35px;
 }
@@ -167,39 +188,84 @@ h3 {
     font-size: 24px;
     color: #666;
     margin: 0 10px;
+    line-height: 3;
 }
 
-/*.button {
-    cursor: pointer;
-    padding: 5px;
-}*/
 
 /* REGISTRO */
 
-.contenedor-input {
-    border-radius: 15px;
+.main-registro {
+    height: 89vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
     margin-bottom: 15px;
-    border: none;
-    width: 200px;
-    padding: 5px;
-    font-size: 13px;
 }
 
-.registro {
+.main-login {
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    margin-bottom: 12px;
+}
+
+.contenedor-input {
+    margin-bottom: 15px;
+    width: 300px;
+    padding: 5px;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+
+/*.registro {
     margin-bottom: 15px;
     font-size: 24px;
+}*/
+
+.titulo1 {
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .titulos {
     font-weight: bold;
-    font-size: 16px;
+    font-size: 14px;
+
 }
 
-.fecha {
+.control {
     width: 100%;
+    border: none;
+    height: 25px;
+    border-radius: 5px;
+    padding: 15px 15px;
+    margin-top: 5px;
 }
 
-/* REGISTRO */
+.button {
+    cursor: pointer;
+    padding: 5px;
+    background-color: #274de6;
+    color: #fff;
+    border: none;
+    font-size: 17px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #0022AA;
+    transition: 450ms;
+}
+
+.seleccion {
+    margin-left: 15px;
+    font-size: 10px;
+}
+
+/* FIN REGISTRO */
 
 
 
@@ -208,6 +274,13 @@ h3 {
 
 }
 
+.contenedor-individual:hover .descripcion {
+    display: block;
+}
+
+.descripcion {
+    display: none;
+}
 
 
 .enlaces-general a {
@@ -217,41 +290,51 @@ h3 {
 @media (min-width: 361px) {
     .encabezado {
         display: flex;
-        flex-grow: 1;
-        justify-content: space-between;
-        max-width: 1200px;
+        text-align: center;
+        justify-content: space-around;
         height: 5vh;
+        width: 92vw;
     }
 
     .logo {
 
         width: 33vw;
-        flex-grow: 0.33;
+
 
     }
 
     .barra {
         text-align: center;
         width: 33vw;
-        flex-grow: 0.33;
         justify-content: right;
+        flex-grow: 1;
     }
 
     .search {
-        max-width: 25vw;
+
+        width: 80%;
+        flex-grow: 1;
+    }
+
+    .lupa {
+
+        width: 18px;
+        height: 3.3vh;
+        border-radius: 0 5px 5px 0;
+        border: none;
+        align-self: center;
     }
 
     .slogan {
         align-self: center;
-        font-size: 14px;
-        flex-grow: 0.33;
+        font-size: 13px;
         justify-content: left;
         width: 33vw;
         text-align: right;
     }
 
     .banner {
-        width: 95vw;
+        width: 100vw;
     }
 
     .enlaces-general ul {
@@ -267,11 +350,25 @@ h3 {
         display: block;
         font-size: 16px;
         flex-grow: 6.5;
+        margin-left: 15px;
     }
 
     .contenedor-individual {
         box-shadow: 10px 10px 10px rgb(100, 100, 100);
         max-width: 40%;
+    }
+
+    .contenedor-indivudual:hover {
+        box-shadow: 10px 10px 10px rgb(100, 100, 100);
+        transition: 450ms;
+    }
+
+    .contenedor-indivudual:hover .descripcion {
+        display: block;
+            }
+
+    .descripcion {
+        display: none;
     }
 
     .contenedor-articulos {
@@ -290,16 +387,38 @@ h3 {
 }
 
 @media (min-width: 769px) {
-    .burger-menu {
-        display: none;
-    }
 
     .encabezado,
     .enlaces-general {
-        max-width: 769px;
+        max-width: 90vw;
         margin: auto;
-        align-items: center;
+
         height: 8vh;
+    }
+
+    .logo {
+        max-width: 300px;
+        flex-grow: 0.33;
+        width: 33vw;
+    }
+
+    .barraBusqueda {
+        align-self: center;
+        flex-grow: 0.33;
+        width: 33vw;
+    }
+
+    .search {
+        width: 25vw;
+    }
+
+    .slogan {
+        max-width: none;
+        align-self: center;
+        font-size: 15px;
+        flex-grow: 0.33;
+        justify-content: center;
+        width: 33vw;
     }
 
     .enlaces-general {
@@ -333,39 +452,41 @@ h3 {
         align-self: flex-end;
     }
 
-    .barraBusqueda {
-        align-self: center;
-        flex-grow: 0.33;
-        width: 33vw;
-    }
-
-    .search {
-        width: 25vw;
-    }
-
-    .slogan {
-        max-width: none;
-        align-self: center;
-        font-size: 12px;
-        flex-grow: 0.33;
-        justify-content: center;
-        width: 33vw;
+    .burger-menu {
+        display: none;
     }
 
     .contenedor-articulos {
         justify-content: center;
-        flex-wrap: nowrap; 
+        flex-wrap: nowrap;
     }
 
-    .contenedor-indivudual {
+    .contenedor-individual {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
         width: 20vw;
         justify-content: space-around;
     }
 
+    .contenedor-individual:hover .descripcion {
+        display: block;
+    }
+
+    .descripcion {
+        display: none;
+    }
+
     .imagen {
         width: 100%;
-        
+    }
+
+    .icono:hover {
+        color: #0022AA;
+    }
+
+    .main-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
     }
 
 }
