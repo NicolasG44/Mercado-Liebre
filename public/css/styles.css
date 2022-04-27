@@ -1,12 +1,10 @@
 header {
-
     background-color: #EAC926;
     padding: 10px;
     width: 100vw;
 }
 
 .logo {
-
     width: 50vw;
     height: 5vh;
 }
@@ -162,12 +160,14 @@ main {
 .main-footer {
     display: flex;
     justify-content: space-between;
+    margin: auto;
+    width: 100vw;
 }
 
 .icono {
     text-align: center;
     font-size: 23px;
-    color: blue;
+    color: #274de6;
 }
 
 .textos-footer {
@@ -190,7 +190,6 @@ h3 {
     margin: 0 10px;
     line-height: 3;
 }
-
 
 /* REGISTRO */
 
@@ -217,12 +216,6 @@ h3 {
     font-size: 12px;
     line-height: 18px;
 }
-
-
-/*.registro {
-    margin-bottom: 15px;
-    font-size: 24px;
-}*/
 
 .titulo1 {
     font-weight: bold;
@@ -268,10 +261,8 @@ h3 {
 /* FIN REGISTRO */
 
 
-
 .enlaces-general {
     display: none;
-
 }
 
 .contenedor-individual:hover .descripcion {
@@ -297,10 +288,7 @@ h3 {
     }
 
     .logo {
-
         width: 33vw;
-
-
     }
 
     .barra {
@@ -311,13 +299,11 @@ h3 {
     }
 
     .search {
-
         width: 80%;
         flex-grow: 1;
     }
 
     .lupa {
-
         width: 18px;
         height: 3.3vh;
         border-radius: 0 5px 5px 0;
