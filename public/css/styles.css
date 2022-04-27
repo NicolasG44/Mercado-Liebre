@@ -365,7 +365,7 @@ h3 {
 
     .contenedor-indivudual:hover .descripcion {
         display: block;
-            }
+    }
 
     .descripcion {
         display: none;
