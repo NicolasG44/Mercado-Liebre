@@ -237,6 +237,10 @@ h3 {
     margin-top: 5px;
 }
 
+.control1:invalid {
+border: 1px solid red;
+}
+
 .button {
     cursor: pointer;
     padding: 5px;
