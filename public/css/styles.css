@@ -74,6 +74,10 @@ main {
     background-color: #ebebeb;
 }
 
+footer {
+    width: 100vw;
+}
+
 .contenedor-articulos {
     display: flex;
     flex-direction: row;
@@ -144,7 +148,7 @@ main {
 }
 
 .descuentos {
-    font-size: 16px;
+    font-size: 13px;
     color: #39b54a;
     line-height: 23px;
     text-align: left;
@@ -158,10 +162,9 @@ main {
 }
 
 .main-footer {
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
-    width: 100vw;
+    text-align: center;
+    margin: 0px 10px;
+    width: 90vw;
 }
 
 .icono {
@@ -171,17 +174,16 @@ main {
 }
 
 .textos-footer {
-    text-align: center;
+    flex-wrap: nowrap;
     font-size: 12px;
     line-height: 12px;
-    padding: 20px;
-    margin: 0 35px;
+    margin: 0 5px;
 }
 
 h6 {
     text-align: left;
     font-size: 10px;
-    padding: 10px;
+    padding: 20px 0 10px 5px;
 }
 
 h3 {
@@ -237,8 +239,8 @@ h3 {
     margin-top: 5px;
 }
 
-.control1:invalid {
-border: 1px solid red;
+.contro1:invalid {
+    border: 1px solid red;
 }
 
 .button {
@@ -340,7 +342,7 @@ border: 1px solid red;
         display: block;
         font-size: 16px;
         flex-grow: 6.5;
-        margin-left: 15px;
+        margin-left: 10px;
     }
 
     .contenedor-individual {
@@ -374,6 +376,14 @@ border: 1px solid red;
         max-width: 100%;
         text-align: center;
     }
+
+.main-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90vw;
+}
+
 }
 
 @media (min-width: 769px) {
@@ -473,10 +483,5 @@ border: 1px solid red;
         color: #0022AA;
     }
 
-    .main-footer {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
 
 }

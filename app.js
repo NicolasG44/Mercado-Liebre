@@ -3,10 +3,12 @@ const path = require('path');
 
 const app = express();
 
+const port = process.env.PORT || 8000;
+
 const publicPath = path.resolve(__dirname, './public');
 app.use(express.static(publicPath));
 
-app.listen(8000, () => {
+app.listen(port, () => {
     console.log('Server running in 8000 port');
 });
 
